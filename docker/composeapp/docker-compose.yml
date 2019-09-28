@@ -1,11 +1,11 @@
 web:
-	image:shinkaiiyo/composeapp
-	command:python app.py
-	ports:
-	- "5000:5000"
-	volumes:
-	- .:/composeapp
-	links:
-	- redis
+  image: shinkaiiyo/composeapp
+  command: python app.py
+  ports:
+  - "5000:5000"
+  volumes:
+  - .:/composeapp
+  links:
+  - redis
 redis:
-	image:redis
+  image: redis
